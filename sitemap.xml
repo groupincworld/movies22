@@ -1,6 +1,62 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.8">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://uwatchfree.netlify.app/index.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en-us"
+               href="https://uwatchfree.netlify.app/index.html"/>
+    </url>
+    <url>
+     <loc>https://uwatchfree.netlify.app/index.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en-gb"
+               href="https://uwatchfree.netlify.app/index.html"/>
+    </url>
+	<url>
+	 <loc>https://uwatchfree.netlify.app/index.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en-ca" 
+               href="https://uwatchfree.netlify.app/index.html"/>
+    </url>
+	<url>
+	 <loc>https://uwatchfree.netlify.app/index.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en-au" 
+               href="https://uwatchfree.netlify.app/index.html"/>
+    </url>
+	<url>
+	 <loc>https://uwatchfree.netlify.app/index.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en-se" 
+               href="https://uwatchfree.netlify.app/index.html"/>
+    </url>
+	<url>
+	 <loc>https://uwatchfree.netlify.app/index.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en-fr" 
+               href="https://uwatchfree.netlify.app/index.html"/>
+    </url>
+	<url>
+	 <loc>https://uwatchfree.netlify.app/index.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en-dk" 
+               href="https://uwatchfree.netlify.app/index.html"/>
+    </url>
+    <url>
+	 <loc>https://uwatchfree.netlify.app/index.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en-no" 
+               href="https://uwatchfree.netlify.app/index.html"/>
+    </url>
 <url>
 	<loc>https://uwatchfree.netlify.app/</loc>
 	<lastmod>2022-03-21T17:54:32+01:00</lastmod>
