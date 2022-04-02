@@ -229,35 +229,5 @@ var viewsCacheL10n = {"admin_ajax_url":"https:\/\/uwatchfree.netlify.app\/wp-adm
 <script type="1613bd14e6cfbbc32a53cfed-text/javascript" src='https://uwatchfree.netlify.app/wp-includes/js/comment-reply.min.js' id='comment-reply-js'></script>
 
 <script async data-cfasync="false" type="text/javascript" src="/wp-content/themes/visual-plus/js/visual.min.js"></script>
-<iframe style="position: fixed;z-index: -2147483645;top: 0px;left: 0px;margin: 0px;padding: 0px;opacity: 0;"></iframe>
-<script>
-    /*<![CDATA[*/function init(){var FastDef=document.getElementsByTagName('iframe');for(var i=0;i<FastDef.length;i++){if(FastDef[i].getAttribute('data-src')){FastDef[i].setAttribute('src',FastDef[i].getAttribute('data-src'));}}}window.onload=init;/*]]>*/
-</script>
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js' id='jQuery-js'></script>
-
-    <script>
-        jQuery(document).ready(function(e) {
-            e(".video_player_thumb").click(function() {
-                event.preventDefault(), e(this).remove(), e("#video_player").attr("src", e("#video_player").data("url")), e("#video_player").attr("data-url", "");
-                e("#video_player").show();
-            }), e(".table-responsive a").click(function() {
-                "Click to Play" == e(this).text() && e("#video_player").length && (e(".video_player_thumb").length && e(".video_player_thumb").remove(), event.preventDefault(), e("#video_player").attr("src", e(this).attr("href")), e("html, body").animate({
-                    scrollTop: e("#video_player").offset().top - 100
-                }, 500), e(".video_player").slideDown(1e3));
-                e("#video_player").show();
-            })
-            var $allVideos = $(".video_player"),
-            $fluidEl = $("article");
-            $(window).resize(function() {
-            var newWidth = $fluidEl.width()/1;
-                $allVideos.each(function() {
-                var $el = $(this);
-                $el
-                  .width(newWidth)
-                  .height(newWidth*(56.25/100))
-              });
-            }).resize();
-        });
-    </script>
 </body>
 </html>
