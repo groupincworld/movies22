@@ -184,12 +184,38 @@ body,button,input,select,textarea { font-family: Raleway, sans-serif; }
 	   });
 	 });
 	 </script>
-	 <div 
-	 style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
-	 unselectable="on"
-	 onselectstart="return false;" 
-	 onmousedown="return false;">
+	  <script>
+	if (document.addEventListener !== undefined) {
+		// Not IE
+		document.addEventListener('click', checkSelection, false);
+	} else {
+		// IE
+		document.attachEvent('onclick', checkSelection);
+	}
 	
+	function checkSelection() {
+		var sel = {};
+		if (window.getSelection) {
+			// Mozilla
+			sel = window.getSelection();
+		} else if (document.selection) {
+			// IE
+			sel = document.selection.createRange();
+		}
+	
+		// Mozilla
+		if (sel.rangeCount) {
+			sel.removeAllRanges();
+			return;
+		}
+	
+		// IE
+		if (sel.text > '') {
+			document.selection.empty();
+			return;
+		}
+	}
+</script>
 <article id="post-220502" class="post-220502 post type-post status-publish format-standard has-post-thumbnail hentry category-drama category-hollywood category-mystery tag-517">
 <header class="entry-header"><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <h1 class="entry-title single-title">The Jungle Cry (2022) </h1>
@@ -327,7 +353,6 @@ button {
 <h3 class="footer">#uwatchfree apk</h3>
 </div>
 <div class="text-center">Copyright © 2014 - 2022 - <a href="https://uwatchfree.netlify.app/how-to-watch/">How to watch?</a> - <a href="https://uwatchfree.netlify.app/contact-us/">Contact</a> - <a href="https://uwatchfree.netlify.app/dmca/">DMCA</a> - <a href="https://uwatchfree.netlify.app/privacy-policy/">Privacy</a> - <a href="https://uwatchfree.netlify.app/terms-of-service/">TOS</a> - <a href="https://uwatchfree.netlify.app/apps/uwatchfree.apk">uwatchfree APP</a></div>
-</div>	Blabla
 </div>
 </footer>
 <script type="8d139f3ede0ae83f41dd2a8a-text/javascript" id='wp-postviews-cache-js-extra'>
