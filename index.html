@@ -39,38 +39,7 @@
     document.onmousedown = rtclickcheck;
     
     </SCRIPT>
-    	  <script>
-            if (document.addEventListener !== undefined) {
-                // Not IE
-                document.addEventListener('click', checkSelection, false);
-            } else {
-                // IE
-                document.attachEvent('onclick', checkSelection);
-            }
-            
-            function checkSelection() {
-                var sel = {};
-                if (window.getSelection) {
-                    // Mozilla
-                    sel = window.getSelection();
-                } else if (document.selection) {
-                    // IE
-                    sel = document.selection.createRange();
-                }
-            
-                // Mozilla
-                if (sel.rangeCount) {
-                    sel.removeAllRanges();
-                    return;
-                }
-            
-                // IE
-                if (sel.text > '') {
-                    document.selection.empty();
-                    return;
-                }
-            }
-        </script>
+    
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CNTX8P33W"></script>
 <script>
@@ -208,6 +177,11 @@ height:300px;
 transform:scale(1.5);
 }
 </style>
+<style>
+    * {
+        -webkit-user-select: none;
+     }
+    </style>
 </head>
 
 <body class="home blog masonry group-blog">
@@ -5051,45 +5025,6 @@ transform:scale(1.5);
             }
         });
     </script>
-<!--<script type="text/javascript">
-    function mousehandler(e) {
-        var myevent = (isNS) ? e : event;
-        var eventbutton = (isNS) ? myevent.which : myevent.button;
-        if ((eventbutton == 2) || (eventbutton == 3)) return false;
-    }
-    document.oncontextmenu = mischandler;
-    document.onmousedown = mousehandler;
-    document.onmouseup = mousehandler;
-    function disableCtrlKeyCombination(e) {
-        var forbiddenKeys = new Array("a", "s", "c", "x","u");
-        var key;
-        var isCtrl;
-        if (window.event) {
-            key = window.event.keyCode;
-            //IE
-            if (window.event.ctrlKey)
-                isCtrl = true;
-            else
-                isCtrl = false;
-        }
-        else {
-            key = e.which;
-            //firefox
-            if (e.ctrlKey)
-                isCtrl = true;
-            else
-                isCtrl = false;
-        }
-        if (isCtrl) {
-            for (i = 0; i < forbiddenKeys.length; i++) {
-                //case-insensitive comparation
-                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-</script>-->
+
 </body>
 </html>
