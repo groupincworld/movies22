@@ -41,6 +41,9 @@
 			-webkit-user-select: none;
 		 }
 		</style>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>		
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CNTX8P33W"></script>
 <script>
@@ -215,7 +218,20 @@ button {
 </div></div>
 <button class="switch" ><a><img src="https://uwatchfree.netlify.app/wp-content/uploads/2022/04/iconrainbow19.png" ></a> Turn off light </button>
 <div id='persoff'></div>
-<div style="text-align: center;margin: 10px 0px 0px 0px;"><a target="_blank" class="btn" title="watch youtube" href="https://www.youtube.com/embed/nfNfDU7-PWM?rel=0&amp;autoplay=1&mute=0"><i style="background-image:url(https://uwatchfree.netlify.app/youtube.png);"></i><span style="font-family: play; font-size: large; font-weight: bold;"> Watch Official Trailer </span></a></div>
+<div style="text-align: center;margin: 10px 0px 0px 0px;">	<button type="button" id="youtube"><i style="background-image:url(https://uwatchfree.netlify.app/youtube.png);"></i><span style="font-family: play; font-size: large; font-weight: bold;"> Watch Official Trailer </span></a>	</button></div>
+
+<script>
+	$('document').ready(function() {
+		
+		$('#youtube').magnificPopup({
+			items: {
+				src: 'https://www.youtube.com/watch?v=nfNfDU7-PWM&t=6s'
+			},
+			type: 'iframe'
+		});
+	});
+</script>
+<!--<div style="text-align: center;margin: 10px 0px 0px 0px;"><a target="_blank" class="btn" title="watch youtube" href="https://www.youtube.com/embed/nfNfDU7-PWM?rel=0&amp;autoplay=1&mute=0"><i style="background-image:url(https://uwatchfree.netlify.app/youtube.png);"></i><span style="font-family: play; font-size: large; font-weight: bold;"> Watch Official Trailer </span></a></div>-->
 <div class="entry-content clearfix">
 <img src="https://uwatchfree.netlify.app/wp-content/uploads/2022/05/zombivli-2022.jpg" alt="Watch Zombivli (2022)" width="200" height="300" class="alignleft size-full wp-image-217230" title="Watch Zombivli (2022)" />
 <p>Starring: Siddarth Jadhav, Vignesh Joshi, Janardan Kadam, Trupti Khamkar, Vijay Nikam, Vaidehi Parshurami, Janaki Pathak, Lalit Prabhakar, 	Rajendra Shisatkar, Sharat Sonu, Manas Vilas, Amey Wagh </p>
