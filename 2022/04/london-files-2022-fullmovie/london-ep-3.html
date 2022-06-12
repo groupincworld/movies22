@@ -209,20 +209,46 @@ button {
 </div></div>
 <button class="switch" ><a><img src="https://uwatchfree.netlify.app/wp-content/uploads/2022/04/iconrainbow19.png" ></a> Turn off light </button>
 <div id='persoff'></div>
-<div style="text-align: center;margin: 10px 0px 0px 0px;"><a target="_blank" class="btn" title="Follow on Telegram" href="https://t.me/uwatchfree1"><i style="background-image:url(https://uwatchfree.netlify.app/Telegram.png);"></i><span style="font-weight: bold;">Follow on Telegram</span></a></div>
+<div style="text-align: center;margin: 10px 0px 0px 0px;"><button class="button" ><a class="portfolio-popup-video" href="https://www.youtube.com/embed/WO5LLgT5YmE?rel=0&amp;autoplay=1&mute=0&loop=1&amp;controls=0&playlist=WO5LLgT5YmE"> <span style="font-family: play; color: rgb(245, 6, 6); font-size: large; font-weight: bold;"> Watch Official Trailer </span></a></button>
+    <script>
+        $(document).ready(function() {
+            $('.portfolio-popup-video').magnificPopup({
+                disableOn: 700,
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+                fixedContentPos: false,
+                type: 'iframe',
+        iframe: {
+            markup: '<div class="mfp-iframe-scaler">' +
+                '<div class="mfp-close"></div>' +
+                '<iframe class="mfp-iframe" frameborder="0" allow="autoplay"></iframe>' +
+                '</div>',
+            patterns: {
+                youtube: {
+                    index: 'youtube.com/',
+                    id: 'v=',
+                    src: 'https://www.youtube.com/embed/WO5LLgT5YmE?rel=0&amp;autoplay=1&mute=0&loop=1&amp;controls=0&playlist=WO5LLgT5YmE'
+                }
+            }
+        }
+    
+            });
+        });
+    </script>
 <div id="server-13" class="le-server bk">
 <div class="les-title">
     <i class="fa fa-plyer mr5"></i>
     <strong>Streamsb</strong>
 </div>
 <div class="les-content">
-    <a title="London Files - Season 1  Episode 6 " class="p2p2" episode-data="6"  href="london-ep-6.html" class="btn-eps first-ep">Episode 6  </a>
-    <a title="London Files - Season 1  Episode 5 " class="p2p2" episode-data="5"  href="london-ep-5.html" class="btn-eps first-ep"> Episode 5  </a>                                                    
-    <a title="London Files - Season 1  Episode 4" class="p2p2"  episode-data="4" href="london-ep-4.html" class="btn-eps first-ep"> Episode 4 </a>                              
-    <a title="London Files - Season 1  Episode 3 " class="p2p2"  episode-data="3"  href="london-ep-3.html" class="btn-eps first-ep">Episode 3</a> 
-   <a title="London Files - Season 1  Episode 2 " class="p2p2"  episode-data="2" href="london-ep-2.html" class="btn-eps first-ep">Episode 2</a>
-   <a title="London Files - Season 1  Episode 1 " class="p2p2" episode-data="1" href="london-ep-1.html" class="btn-eps first-ep">Episode 1</a>
-
+    <button class="switch" > <a title="London Files - Season 1  Episode 6 " style="color: #080808; font-weight: bold;"class="p2p2" episode-data="6"  href="london-ep-6.html" class="btn-eps first-ep">Episode 6  </a></button> 
+    <button class="switch" > <a title="London Files - Season 1  Episode 5 " style="color: #080808; font-weight: bold;"class="p2p2" episode-data="5"  href="london-ep-5.html" class="btn-eps first-ep"> Episode 5  </a></button>                                                     
+    <button class="switch" ><a title="London Files - Season 1  Episode 4" style="color: #080808; font-weight: bold;"class="p2p2"  episode-data="4" href="london-ep-4.html" class="btn-eps first-ep"> Episode 4 </a></button>                               
+    <button class="switch" ><a title="London Files - Season 1  Episode 3 " style="color: #080808; font-weight: bold;"class="p2p2"  episode-data="3"  href="london-ep-3.html" class="btn-eps first-ep">Episode 3</a> </button> 
+    <button class="switch" ><a title="London Files - Season 1  Episode 2 " style="color: #080808; font-weight: bold;"class="p2p2"  episode-data="2" href="london-ep-2.html" class="btn-eps first-ep">Episode 2</a></button> 
+    <button class="switch" ><a title="London Files - Season 1  Episode 1 " style="color: #080808; font-weight: bold;"class="p2p2" episode-data="1" href="london-ep-1.html" class="btn-eps first-ep">Episode 1</a></button> 
+    
 <div class="entry-content clearfix">
 <img src="https://uwatchfree.netlify.app/wp-content/uploads/2022/04/london-files-2022.jpg" alt="Watch London Files Season 1 (2022)" width="200" height="300" class="alignleft size-full wp-image-216685" title="Watch London Files Season 1 (2022)" />
 <p>Starring: Arjun Rampal, Purab Kohli, Medha Rana, Gopal Datt, Sapna Pabbi, Eva-Jane Willis, Sagar Arya, Shanice Archer, Amritanshu Kumar, Adil Zubair, Manvir Bawa, Daisy Louve, Warren Palmer</p>
@@ -483,6 +509,10 @@ var viewsCacheL10n = {"admin_ajax_url":"https:\/\/uwatchfree.netlify.app\/wp-adm
             }
         });
     </script>
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
 </body>
 </html>

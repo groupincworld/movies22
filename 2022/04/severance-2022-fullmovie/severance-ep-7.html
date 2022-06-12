@@ -211,7 +211,33 @@ button {
 </div> </div></br>
 <button class="switch" ><a><img src="https://uwatchfree.netlify.app/wp-content/uploads/2022/04/iconrainbow19.png" ></a> Turn off light </button>
 <div id='persoff'></div>
-<div style="text-align: center;margin: 10px 0px 0px 0px;"><a target="_blank" class="btn" title="Follow on Telegram" href="https://t.me/uwatchfree1"><i style="background-image:url(https://uwatchfree.netlify.app/Telegram.png);"></i><span style="font-weight: bold;">Follow on Telegram</span></a></div>
+<div style="text-align: center;margin: 10px 0px 0px 0px;"><button class="button" ><a class="portfolio-popup-video" href="https://www.youtube.com/embed/xEQP4VVuyrY?rel=0&amp;autoplay=1&mute=0&loop=1&amp;controls=0&playlist=xEQP4VVuyrY"> <span style="font-family: play; color: rgb(245, 6, 6); font-size: large; font-weight: bold;"> Watch Official Trailer </span></a></button>
+	<script>
+		$(document).ready(function() {
+			$('.portfolio-popup-video').magnificPopup({
+				disableOn: 700,
+				mainClass: 'mfp-fade',
+				removalDelay: 160,
+				preloader: false,
+				fixedContentPos: false,
+				type: 'iframe',
+		iframe: {
+			markup: '<div class="mfp-iframe-scaler">' +
+				'<div class="mfp-close"></div>' +
+				'<iframe class="mfp-iframe" frameborder="0" allow="autoplay"></iframe>' +
+				'</div>',
+			patterns: {
+				youtube: {
+					index: 'youtube.com/',
+					id: 'v=',
+					src: 'https://www.youtube.com/embed/xEQP4VVuyrY?rel=0&amp;autoplay=1&mute=0&loop=1&amp;controls=0&playlist=xEQP4VVuyrY'
+				}
+			}
+		}
+	
+			});
+		});
+	</script>
 	<div id="server-13" class="le-server bk">
     <div class="les-title">
         <i class="fa fa-plyer mr5"></i>
@@ -514,5 +540,10 @@ var viewsCacheL10n = {"admin_ajax_url":"https:\/\/uwatchfree.netlify.app\/wp-adm
             }
         });
     </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
 </body>
 </html>
