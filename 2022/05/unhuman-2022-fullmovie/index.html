@@ -209,26 +209,45 @@ button {
 <button class="switch" ><a><img src="https://uwatchfree.netlify.app/wp-content/uploads/2022/04/iconrainbow19.png" ></a> Turn off light </button>
 <div id='persoff'></div>
 
-<div style="text-align: center;margin: 10px 0px 0px 0px;"><button class="button" ><a class="popup-youtube" href="http://www.youtube.com/watch?v=FmReeWg6vPo?rel=0&amp;autoplay=1&mute=0"><span style="font-family: play; color: rgb(245, 6, 6); font-size: large; font-weight: bold;"> Watch Official Trailer </span></a></button>
-	<!--Magnific-popup-->
-<script src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.8.9/jquery.magnific-popup.min.js" ></script>
+<div style="text-align: center;margin: 10px 0px 0px 0px;"><button class="button" >  <a href="#headerPopup" id="headerVideoLink" target="_blank" class="btn-outline-light popup-modal"><span style="font-family: play; color: rgb(245, 6, 6); font-size: large; font-weight: bold;">Watch Official Trailer</span></a></button>
+      </p>
+      <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/FmReeWg6vPo?rel=0&amp;autoplay=1&mute=1&loop=1&amp;controls=1&playlist=FmReeWg6vPo" frameborder="0" allow=" encrypted-media" allowfullscreen></iframe>
+      </div>
 
-<script type="text/javascript"> 
-$(document).ready(function() {
-    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-
-        fixedContentPos: false
-    });
-});
-</script>
 <style>
-.my-popup {height:900px; width:1200px}
+#headerPopup{
+	width:75%;
+	margin:0 auto;
+  }
+  
+  #headerPopup iframe{
+	width:100%;
+	margin:0 auto;
+  }
 </style>
+<script>
+$(document).ready(function() {
+	$('#headerVideoLink').magnificPopup({
+	  type:'inline',
+	  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+	});         
+  });
+</script>
+<!--<a class="popup" href="#!" data-link="http://www.youtube.com/embed/FmReeWg6vPo?rel=0&amp;autoplay=1&mute=0&loop=1&amp;controls=0&playlist=FmReeWg6vPo&amp;enablejsapi=1" data-title="Watch Official Trailer - Unhuman">Watch Official Trailer</a>
+
+
+<div id="video-view">
+</div>
+<script>
+$(".popup").click(function () {
+    var $this = $(this);
+    var $iframe = $("<iframe>").attr("src", $this.data("link")).css({"width": 1200, "height": 500});
+    var $title = $("<h1>").text($this.data("title"));
+    $("#video-view").html($title).append($iframe);
+    $iframe.wrap("<div class='class-video'>");
+});
+</script>-->
 <div class="entry-content clearfix">
 <img src="https://uwatchfree.netlify.app/wp-content/uploads/2022/05/unhuman-2022.jpg" alt="Watch Unhuman (2022)" width="200" height="300" class="alignleft size-full wp-image-217230" title="Watch Unhuman (2022)" />
 <p>Starring: Brianne Tju, Benjamin Wadsworth, Uriah Shelton, Ali Gallo, Peter Giles, Drew Scheid, Joshua Mikel, Lo Graham, C.J. LeBlanc, Blake Burt, Dana Wing Lau, Emma Fitzpatrick, Traysion Wilburn </p>
