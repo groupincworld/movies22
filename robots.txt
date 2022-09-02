@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
-Disallow: /cgi-bin/
+Disallow: /search
+Allow: /
 Sitemap: https://uwatchfree.netlify.app/atom.xml?redirect=false&start-index=1&max-results=500
